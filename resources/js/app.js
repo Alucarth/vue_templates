@@ -11,15 +11,22 @@ window.axios = require('axios')
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
 
 import Vue from 'vue'
+import Vuetify from 'vuetify'
+// import 'vuetify/dist/vuetify.min.css'
 // import Vuex from 'vuex'
 import App from './views/App.vue'
 // import VueRouter from 'vue-router'
 
 // Vue.use(VueRouter)
 // Vue.use(Vuex)
+Vue.use(Vuetify)
+// const opts = {}
+
+// export default new Vuetify(opts)
 
 const app = new Vue({
     el:'#app',
-    components:{ App }
+    components:{ App },
+    vuetify : new Vuetify(),
 
 })
