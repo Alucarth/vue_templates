@@ -12,6 +12,7 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'
 
 import Vue from 'vue'
 import Vuetify from 'vuetify'
+import 'material-design-icons-iconfont/dist/material-design-icons.css' // Ensure you are using css-loader
 // import 'vuetify/dist/vuetify.min.css'
 // import Vuex from 'vuex'
 import App from './views/App.vue'
@@ -27,6 +28,11 @@ Vue.use(Vuetify)
 const app = new Vue({
     el:'#app',
     components:{ App },
-    vuetify : new Vuetify(),
+    vuetify : new Vuetify({
+        icons: {
+          iconfont: 'mdi',
+          iconfont: 'md',
+        },
+      }),
 
 })
