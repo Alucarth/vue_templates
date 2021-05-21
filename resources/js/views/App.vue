@@ -3,19 +3,31 @@
     <v-navigation-drawer
         v-model="drawer"
         app
+        dark
         permanent
         :mini-variant.sync="mini"
+         src="https://cdn.vuetifyjs.com/images/backgrounds/bg-2.jpg"
+
     >
-    <v-list-item>
-    <v-list-item-content>
-        <v-list-item-title class="title">
-        Application
-        </v-list-item-title>
-        <v-list-item-subtitle>
-        subtext
-        </v-list-item-subtitle>
-    </v-list-item-content>
-    </v-list-item>
+    <v-list>
+        <v-list-item class="px-2">
+        <v-list-item-avatar>
+            <v-img src="https://randomuser.me/api/portraits/women/85.jpg"></v-img>
+        </v-list-item-avatar>
+        </v-list-item>
+
+        <v-list-item link>
+        <v-list-item-content>
+            <v-list-item-title class="title">
+            Sandra Adams
+            </v-list-item-title>
+            <v-list-item-subtitle>sandra_a88@gmail.com</v-list-item-subtitle>
+        </v-list-item-content>
+        </v-list-item>
+    </v-list>
+
+    <v-divider></v-divider>
+
 
     <v-divider></v-divider>
 

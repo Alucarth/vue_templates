@@ -2026,6 +2026,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -19855,7 +19867,13 @@ var render = function() {
       _c(
         "v-navigation-drawer",
         {
-          attrs: { app: "", permanent: "", "mini-variant": _vm.mini },
+          attrs: {
+            app: "",
+            dark: "",
+            permanent: "",
+            "mini-variant": _vm.mini,
+            src: "https://cdn.vuetifyjs.com/images/backgrounds/bg-2.jpg"
+          },
           on: {
             "update:miniVariant": function($event) {
               _vm.mini = $event
@@ -19874,24 +19892,53 @@ var render = function() {
         },
         [
           _c(
-            "v-list-item",
+            "v-list",
             [
               _c(
-                "v-list-item-content",
+                "v-list-item",
+                { staticClass: "px-2" },
                 [
-                  _c("v-list-item-title", { staticClass: "title" }, [
-                    _vm._v("\n      Application\n      ")
-                  ]),
-                  _vm._v(" "),
-                  _c("v-list-item-subtitle", [
-                    _vm._v("\n      subtext\n      ")
-                  ])
+                  _c(
+                    "v-list-item-avatar",
+                    [
+                      _c("v-img", {
+                        attrs: {
+                          src:
+                            "https://randomuser.me/api/portraits/women/85.jpg"
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-list-item",
+                { attrs: { link: "" } },
+                [
+                  _c(
+                    "v-list-item-content",
+                    [
+                      _c("v-list-item-title", { staticClass: "title" }, [
+                        _vm._v("\n          Sandra Adams\n          ")
+                      ]),
+                      _vm._v(" "),
+                      _c("v-list-item-subtitle", [
+                        _vm._v("sandra_a88@gmail.com")
+                      ])
+                    ],
+                    1
+                  )
                 ],
                 1
               )
             ],
             1
           ),
+          _vm._v(" "),
+          _c("v-divider"),
           _vm._v(" "),
           _c("v-divider"),
           _vm._v(" "),
