@@ -23,7 +23,7 @@ import App from './views/App.vue'
 // Vue.use(Vuex)
 Vue.use(Vuetify)
 // const opts = {}
-
+console.log(process.env.MIX_SERVER_MODE)
 // export default new Vuetify(opts)
 
 const app = new Vue({
